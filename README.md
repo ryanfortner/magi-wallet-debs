@@ -1,4 +1,4 @@
-# magicoin-wallet
+# magi-wallet-debs
 XMG (Coin Magi) wallet software for Linux
 
 ### Installation
