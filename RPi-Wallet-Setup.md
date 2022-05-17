@@ -5,6 +5,8 @@ I suggest you increase the swapfile: https://singleboardbytes.com/645/install-ma
 
 Clone my fork of the wallet. `git clone https://github.com/ryanfortner/magi`
 
+Enter the wallet directory. `cd magi`
+
 For gui wallet:
 ```
 qmake m-wallet.pro BDB_INCLUDE_PATH=/opt/local/db-4.8.30.NC/include BDB_LIB_PATH=/opt/local/db-4.8.30.NC/lib BDB_LIB_SUFFIX=-4.8
