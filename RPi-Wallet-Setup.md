@@ -3,10 +3,6 @@ For RPiOS (Raspberry Pi 4 tested) 64 bit only.
 
 I suggest you increase the swapfile: https://singleboardbytes.com/645/install-magi-wallet-raspberry-pi-4.htm
 
-Clone my fork of the wallet. `git clone https://github.com/ryanfortner/magi`
-
-Enter the wallet directory. `cd magi`
-
 install dependencies
 ```bash
 sudo apt-get install build-essential -y
@@ -35,6 +31,10 @@ cd db-4.8.30.NC/build_unix
 make
 sudo make install
 ```
+
+clone my fork of the wallet: `git clone https://github.com/ryanfortner/magi`
+
+enter the magi dir : `cd magi`
 
 For gui wallet:
 ```
