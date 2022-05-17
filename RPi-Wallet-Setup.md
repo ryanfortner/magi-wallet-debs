@@ -7,16 +7,7 @@ Clone my fork of the wallet. `git clone https://github.com/ryanfortner/magi`
 
 Enter the wallet directory. `cd magi`
 
-For gui wallet:
-```
-qmake m-wallet.pro BDB_INCLUDE_PATH=/opt/local/db-4.8.30.NC/include BDB_LIB_PATH=/opt/local/db-4.8.30.NC/lib BDB_LIB_SUFFIX=-4.8
-make
-```
-
-For magid I added berkeley to make file call:
-make -f makefile.unix xCPUARCH=aarch64 CXXFLAGS='-I /opt/local/db-4.8.30.NC/include -L /opt/local/db-4.8.30.NC/lib'
-
-dependencies
+install dependencies
 ```bash
 sudo apt-get install build-essential -y
 sudo apt-get install libssl-dev -y
@@ -44,3 +35,13 @@ cd db-4.8.30.NC/build_unix
 make
 sudo make install
 ```
+
+For gui wallet:
+```
+qmake m-wallet.pro BDB_INCLUDE_PATH=/opt/local/db-4.8.30.NC/include BDB_LIB_PATH=/opt/local/db-4.8.30.NC/lib BDB_LIB_SUFFIX=-4.8
+make
+```
+
+For magid I added berkeley to make file call:
+make -f makefile.unix xCPUARCH=aarch64 CXXFLAGS='-I /opt/local/db-4.8.30.NC/include -L /opt/local/db-4.8.30.NC/lib'
+
